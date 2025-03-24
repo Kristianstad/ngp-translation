@@ -6,4 +6,5 @@ RUN \
    apt update -y \
 && apt upgrade -y \
 && apt install git pyqt5-dev-tools \
-&& chmod +x /usr/local/bin/update-translation
+&& chmod +x /usr/local/bin/update-translation \
+&& mkdir /translations
