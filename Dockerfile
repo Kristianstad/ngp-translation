@@ -10,4 +10,4 @@ RUN apt-get -q update \
  && apt-get -qy --no-install-recommends install git ca-certificates pyqt5-dev-tools qttools5-dev-tools \
  && rm -rf /var/lib/apt/lists/* \
  && chmod +x /usr/local/bin/update-translation \
- && mkdir /translations
+ && mkdir /ngp-translations
