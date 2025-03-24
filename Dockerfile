@@ -3,8 +3,9 @@ FROM ubuntu:24.04
 COPY /bin/update-translation /usr/local/bin/
 
 RUN \
-   apt update -qy \
-&& apt upgrade -qy \
-&& apt install -qy git pyqt5-dev-tools \
+   apt-get -q update \
+&& apt-get -qy upgrade \
+&& apt-get -qy --no-install-recommends install git pyqt5-dev-tools \
+&& rm -rf /var/lib/apt/lists/* \
 && chmod +x /usr/local/bin/update-translation \
 && mkdir /translations
