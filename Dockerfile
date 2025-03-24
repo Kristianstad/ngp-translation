@@ -11,3 +11,5 @@ RUN apt-get -q update \
  && rm -rf /var/lib/apt/lists/* \
  && chmod +x /usr/local/bin/update-translation \
  && mkdir /ngp-translations
+
+CMD update-translation
