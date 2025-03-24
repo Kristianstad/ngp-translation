@@ -2,6 +2,9 @@ FROM ubuntu:24.04
 
 COPY /bin/update-translation /usr/local/bin/
 
+ENV DEBIAN_FRONTEND="noninteractive" \
+    TZ="Europe/Stockholm"
+
 RUN \
    apt-get -q update \
 && apt-get -qy upgrade \
