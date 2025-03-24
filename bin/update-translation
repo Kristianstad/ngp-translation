@@ -4,4 +4,6 @@
 && cd ngp-connect \
 && pylupdate5 -noobsolete -verbose ngpconnect/resources/i18n/plugin_translation.pro \
 && lrelease ngpconnect/resources/i18n/*.ts \
-&& cp -f ngpconnect/resources/i18n/*.* /ngp-translations/
+&& cp -f ngpconnect/resources/i18n/*.* /ngp-translations/ \
+&& cd / \
+&& rm -rf ngp-connect
